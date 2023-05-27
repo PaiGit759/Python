@@ -1,0 +1,28 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block content %}
+<div class="features">
+  <h1>{{title}} *****</h1>
+  <p>Loren Loren Loren Loren Loren Loren Loren Loren Loren Loren Loren Loren Loren Loren Loren Loren </p>
+  <button class="btn btn-warning"> On page about</button>
+
+
+  {% for el in values %}
+    {% if el == 'Hello' %}
+      {% filter upper %}
+        <p> {{el}} </p>
+      {% endfilter %}
+    {% endif %}
+  {% endfor %}
+
+  {% for el in obj %}
+    <p> {{el|upper}} </p>
+  {% endfor %}
+
+</div>
+
+
+<!-- {% include 'main/test.html' %} -->
+{% endblock %}

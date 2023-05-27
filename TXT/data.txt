@@ -1,0 +1,51 @@
+Hello
+world
+
+WeatherApp    
+
+python manage.py runserver  #запускает сервер
+
+virtualenv ptest -p python3 #создает виртуальную среду
+
+source ptest/bin/activate #активирует виртуальную среду
+
+pip install Django #устанавливает Джанго
+
+deactivate  деактивирует #виртуальную среду
+
+python manage.py startapp main # создает приложение
+
+python manage.py makemigrations # создает файл миграции
+
+python manage.py migrate  # выполняет файл миграции
+
+python manage.py createsuperuser #создает суперюзера
+
+django-admin startproject #создает новый проект
+
+pip install requests
+
+pip freeze > requirements.txt
+
+
+
+f7be37d83805eb36febf406de33bd7f9 ключ к АПИ сайта погоды 
+
+https://api.openweathermap.org/data/2.5/weather?q=London,&appid=f7be37d83805eb36febf406de33bd7f9
+
+
+{
+    'coord': {'lon': -74.006, 'lat': 40.7143}, 
+    'weather': [{'id': 802, 'main': 'Clouds', 'description': 'scattered clouds', 'icon': '03d'}],
+    'base': 'stations', 
+    'main': {'temp': 15.74, 'feels_like': 15.28, 'temp_min': 13.81, 'temp_max': 17.2, 'pressure': 1028, 'humidity': 73},
+    'visibility': 10000, 
+    'wind': {'speed': 4.12, 'deg': 40}, 
+    'clouds': {'all': 40}, 
+    'dt': 1684847058, 
+    'sys': {'type': 2, 'id': 2008101, 'country': 'US', 'sunrise': 1684834357, 'sunset': 1684887192}, 
+    'timezone': -14400, 
+    'id': 5128581, 
+    'name': 'New York', 
+    'cod': 200
+}
